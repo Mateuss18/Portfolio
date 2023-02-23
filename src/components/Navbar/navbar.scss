@@ -1,0 +1,31 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+.navbar {
+  position: fixed;
+  width: 100dvw;
+  top: 0;
+  background-color: variables.$bg-color-1;
+  border-bottom: 1px solid variables.$gray;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 9rem;
+
+    .logo {
+      height: 35px;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: variables.$gray-text;
+
+      li {
+        @include mixins.main-hover;
+      }
+    }
+  }
+}
