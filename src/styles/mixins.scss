@@ -1,0 +1,27 @@
+@use "./variables.scss";
+
+@mixin resetCSS {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: inherit;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+@mixin main-hover {
+  transition: 0.3s;
+
+  &:hover {
+    color: variables.$red-800;
+  }
+}
