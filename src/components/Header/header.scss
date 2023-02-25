@@ -1,0 +1,83 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+header {
+  background-color: variables.$bg-color-1;
+  margin-top: 76px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px 155px;
+
+    .my-picture {
+      width: 400px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 528px;
+      color: variables.$white;
+
+      &-message {
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+
+      &-name {
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
+
+      &-career {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .btn {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          cursor: pointer;
+          font-size: 1rem;
+          font-weight: 900;
+          padding: 10px 15px;
+          border-radius: 8px;
+        }
+
+        &-linkedin {
+          background-color: variables.$blue-400;
+          border: 2px solid variables.$blue-700;
+          @include mixins.btn-hover(variables.$blue-400, variables.$blue-700);
+        }
+
+        &-github {
+          color: variables.$bg-color-1;
+          background-color: variables.$white-200;
+          border: 2px solid variables.$gray-dark;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            background-color: variables.$white-600;
+            border-color: variables.$white;
+          }
+        }
+
+        &-download {
+          background-color: variables.$red-800;
+          border: 2px solid variables.$red-900;
+          @include mixins.btn-hover(variables.$red-800, variables.$red-900);
+        }
+      }
+    }
+  }
+}
