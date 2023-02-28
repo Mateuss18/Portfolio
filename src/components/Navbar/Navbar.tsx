@@ -1,4 +1,4 @@
-import logo from '../../assets/logoMateusLopes.svg'
+import logo from './assets/logoMateusLopes.svg'
 import './navbar.scss'
 
 const Navbar = () => {

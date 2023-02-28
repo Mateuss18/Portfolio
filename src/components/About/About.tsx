@@ -1,4 +1,4 @@
-import ilustracao from '../../assets/ilustracao.svg'
+import ilustracao from './assets/ilustracao.svg'
 import './about.scss'
 
 function About() {
