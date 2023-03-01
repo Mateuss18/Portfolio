@@ -2,22 +2,25 @@
 @use "../../styles/mixins.scss";
 
 .navbar {
+  display: flex;
+  align-items: center;
   position: fixed;
   width: 100dvw;
+  height: 76px;
+  z-index: 1;
   top: 0;
   background-color: variables.$bg-color-1;
   border-bottom: 1px solid variables.$gray;
 
-  &-container {
-    display: flex;
+  .wrapper {
+    @extend %wrapper-styles;
     justify-content: space-between;
-    padding: 20px 9rem;
 
     .logo {
-      height: 35px;
+      height: 40px;
     }
 
-    &-links {
+    .menu {
       display: flex;
       align-items: center;
       gap: 20px;
@@ -25,6 +28,7 @@
 
       li {
         @include mixins.main-hover;
+        font-size: 1.25rem;
       }
     }
   }
