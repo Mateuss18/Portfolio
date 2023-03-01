@@ -7,13 +7,15 @@ import './header.scss'
 
 const Header = () => {
   return (
-    <header>
+    <header id='header'>
       <div className="wrapper">
         <img className='my-picture' src={imagemMateus} alt="Imagem do Mateus Lopes" />
-        <div className="right">
-          <p className='right-message'>Olá seja bem vindo, sou</p>
-          <h1 className='right-name'>Mateus Antonio Rodrigues Lopes</h1>
-          <p className='right-career'>Desenvolvedor Front End</p>
+        <div className="apresentation">
+          <p className='apresentation-message'>Olá seja bem vindo, sou</p>
+          <h1 className='apresentation-name'>
+            Mateus Antonio Rodrigues Lopes
+            <span className='apresentation-career'>Desenvolvedor Front End</span>
+          </h1>
           <div className="social-links">
             <a className='social-links-linkedin btn' target={'_blank'} href='https://www.linkedin.com/in/mateus--lopes/'>
               <img src={iconLinkedin} alt="Icone do LinkedIn" />
@@ -34,4 +36,4 @@ const Header = () => {
   )
 }
 
-export { Header }
+export default Header

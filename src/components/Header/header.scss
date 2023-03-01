@@ -4,19 +4,19 @@
 header {
   background-color: variables.$bg-color-1;
   margin-top: 76px;
+  padding: 72px 0;
 
   .wrapper {
-    display: flex;
+    @extend %wrapper-styles;
     justify-content: space-between;
-    align-items: center;
-    padding: 72px 155px;
 
     .my-picture {
-      width: 400px;
+      width: 25rem;
     }
 
-    .right {
+    .apresentation {
       display: flex;
+      justify-content: center;
       flex-direction: column;
       gap: 20px;
       max-width: 528px;
@@ -33,6 +33,8 @@ header {
       }
 
       &-career {
+        display: block;
+        padding-top: 10px;
         font-size: 2rem;
         font-weight: 400;
       }
@@ -73,6 +75,7 @@ header {
         }
 
         &-download {
+          width: 192.98px;
           background-color: variables.$red-800;
           border: 2px solid variables.$red-900;
           @include mixins.btn-hover(variables.$red-800, variables.$red-900);
