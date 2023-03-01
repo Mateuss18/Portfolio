@@ -1,10 +1,13 @@
 @use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
 
-.about {
+#about {
   background-color: variables.$bg-color-2;
+  padding: 72px 0;
 
   .wrapper {
-    padding: 72px 155px;
+    @extend %wrapper-styles;
+    flex-direction: column;
 
     .title {
       text-align: center;
@@ -17,16 +20,18 @@
     .container {
       display: flex;
       justify-content: center;
-      gap: 6rem;
+      gap: 5rem;
 
       .ilustration {
-        width: 480px;
+        width: 50%;
       }
 
       .description {
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        text-align: justify;
+        width: 50%;
+        font-size: 1.25rem;
         font-weight: 400;
         gap: 25px;
         color: variables.$white;
