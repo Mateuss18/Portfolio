@@ -6,31 +6,32 @@
   color: variables.$white;
 
   .wrapper {
-    padding: 72px 155px;
+    padding: 72px 118px;
 
     .title {
       @extend %section-title;
     }
 
     .container {
-      @extend %display-flex-column;
+      display: flex;
       gap: 40px;
 
       .card {
         @extend %display-flex-column;
+        width: 50%;
         gap: 16px;
 
         .head {
           display: flex;
-          align-items: center;
+          flex-direction: column;
           justify-content: space-between;
 
           .card-title {
-            font-size: 1.5rem;
+            font-size: 1.625rem;
           }
 
           .card-time {
-            font-size: 1rem;
+            font-size: 1.125rem;
             font-weight: 400;
             color: variables.$gray-text;
           }
@@ -41,12 +42,12 @@
           gap: 24px;
 
           .company {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             color: variables.$red-200;
           }
 
           .description {
-            font-size: 1rem;
+            font-size: 1.25rem;
             color: variables.$gray-text;
           }
         }
