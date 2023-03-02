@@ -1,0 +1,51 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+#skills {
+  background-color: variables.$bg-color-1;
+  color: variables.$white;
+  padding: 72px 0;
+
+  .wrapper {
+    @extend %wrapper-styles;
+    flex-direction: column;
+
+    .title {
+      @extend %section-title;
+    }
+
+    .container-skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+
+      .skill {
+        @extend %display-flex-column;
+        justify-content: center;
+        cursor: pointer;
+
+        &-name {
+          font-size: 1.5rem;
+          font-weight: 400;
+          text-align: center;
+          color: variables.$gray-text;
+          padding-bottom: 5px;
+        }
+
+        &-card {
+          display: flex;
+          border-radius: 6px;
+          border: solid 4px transparent;
+          transition: 0.9s;
+
+          &:hover {
+            transition: 0.3s;
+            border-color: variables.$red-800;
+            transform: scale(1.04);
+          }
+        }
+      }
+    }
+  }
+}
