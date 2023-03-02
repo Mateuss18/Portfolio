@@ -1,0 +1,62 @@
+@use "../../../styles/variables.scss";
+@use "../../../styles/mixins.scss";
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 14px;
+  margin-right: 12px;
+  background-color: variables.$bg-color-1;
+  color: variables.$white;
+  border-radius: 10px;
+  border: solid 3px transparent;
+  transition: 0.4s;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+
+  &:hover {
+    border-color: variables.$white;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &-image {
+    width: 100%;
+    border-radius: 10px;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &-links {
+    display: flex;
+    gap: 22px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 2px;
+      font-size: 1rem;
+      font-weight: 400;
+
+      span {
+        border-bottom: solid 3px transparent;
+        transition: 0.4s;
+
+        &:hover {
+          border-color: variables.$white;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+.espaco {
+  width: 6px !important;
+}
