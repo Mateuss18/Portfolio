@@ -1,0 +1,32 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+#projects {
+  background-color: variables.$bg-color-2;
+  padding: 72px 0;
+
+  .wrapper {
+    @extend %wrapper-styles;
+    flex-direction: column;
+
+    .title {
+      @extend %section-title;
+    }
+
+    .alice-carousel__next-btn {
+      position: relative;
+      bottom: 16rem;
+      left: 72rem;
+      transform: scale(5);
+      width: fit-content !important;
+    }
+
+    .alice-carousel__prev-btn {
+      position: relative;
+      bottom: 16rem;
+      right: 5rem;
+      transform: scale(5);
+      width: fit-content !important;
+    }
+  }
+}
