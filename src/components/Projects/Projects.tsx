@@ -1,7 +1,6 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import ProjectCard from './ProjectCard/ProjectCard'
-import testeImage from '../../assets/teste.png'
 import './projects.scss'
 
 const Projects = () => {
@@ -29,6 +28,7 @@ const Projects = () => {
           autoPlay
           autoPlayInterval={2000}
           animationDuration={950}
+          infinite={true}
           autoPlayStrategy={'default'}
           disableButtonsControls={true}
           items={items}

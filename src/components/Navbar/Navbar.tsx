@@ -1,7 +1,7 @@
 import logo from './assets/logoMateusLopes.svg'
 import './navbar.scss'
 
-const Navbar = () => {
+function Navbar () {
 
   return (
     <nav className='navbar'>
@@ -22,4 +22,4 @@ const Navbar = () => {
   )
 } 
 
-export { Navbar }
+export default Navbar
