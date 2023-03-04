@@ -11,7 +11,7 @@ header {
     justify-content: space-between;
 
     .my-picture {
-      width: 25rem;
+      width: 28.125rem;
     }
 
     .apresentation {
@@ -57,27 +57,28 @@ header {
 
         &-linkedin {
           background-color: variables.$blue-400;
-          border: 2px solid variables.$blue-700;
+          border: 3px solid variables.$blue-700;
           @include mixins.btn-hover(variables.$blue-400, variables.$blue-700);
         }
 
         &-github {
           color: variables.$bg-color-1;
           background-color: variables.$white-200;
-          border: 2px solid variables.$gray-dark;
+          border: 3px solid variables.$gray-dark;
           transition: 0.3s;
 
           &:hover {
             transition: 0.3s;
             background-color: variables.$white-600;
-            border-color: variables.$white;
+            border-color: variables.$gray;
           }
         }
 
         &-download {
-          width: 192.98px;
+          width: fit-content;
+          padding: 12.5px 15px !important;
           background-color: variables.$red-800;
-          border: 2px solid variables.$red-900;
+          border: 3px solid variables.$red-900;
           @include mixins.btn-hover(variables.$red-800, variables.$red-900);
         }
       }
