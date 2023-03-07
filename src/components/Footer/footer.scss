@@ -1,0 +1,31 @@
+@use "../../styles/variables.scss";
+@use "../../styles/mixins.scss";
+
+#footer {
+  background-color: variables.$bg-color-1;
+  color: variables.$white;
+  padding: 12px 0;
+
+  .wrapper {
+    @extend %wrapper-styles;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .left {
+      span {
+        color: variables.$red-200;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 137px;
+      }
+    }
+  }
+}
