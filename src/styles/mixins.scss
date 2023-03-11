@@ -51,6 +51,12 @@
   }
 }
 
+@mixin notebook {
+  @media (max-width: 1380px) {
+    @content;
+  }
+}
+
 %section-title {
   font-size: 2.5rem;
   font-weight: 400;

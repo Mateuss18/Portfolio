@@ -12,12 +12,20 @@
   background-color: variables.$bg-color-1;
   border-bottom: 1px solid variables.$gray;
 
+  @include mixins.notebook {
+    height: 60px;
+  }
+
   .wrapper {
     @extend %wrapper-styles;
     justify-content: space-between;
 
     .logo {
       height: 40px;
+
+      @include mixins.notebook {
+        height: 30px;
+      }
     }
 
     .menu {
@@ -29,6 +37,10 @@
       li {
         @include mixins.main-hover;
         font-size: 1.25rem;
+
+        @include mixins.notebook {
+          font-size: 1rem;
+        }
       }
     }
   }
