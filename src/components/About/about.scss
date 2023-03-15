@@ -24,6 +24,10 @@
 
       .ilustration {
         width: 50%;
+
+        @include mixins.notebook {
+          width: 40%;
+        }
       }
 
       .description {
@@ -35,6 +39,10 @@
         font-weight: 400;
         gap: 25px;
         color: variables.$white;
+
+        @include mixins.notebook {
+          font-size: 1.15rem;
+        }
       }
     }
   }

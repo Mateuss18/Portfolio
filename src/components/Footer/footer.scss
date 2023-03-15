@@ -6,6 +6,10 @@
   color: variables.$white;
   padding: 12px 0;
 
+  @include mixins.notebook {
+    font-size: 0.9rem;
+  }
+
   .wrapper {
     @extend %wrapper-styles;
     align-items: center;
@@ -24,7 +28,11 @@
       gap: 10px;
 
       img {
-        width: 137px;
+        width: 115px;
+
+        @include mixins.notebook {
+          font-size: 0.9rem;
+        }
       }
     }
   }

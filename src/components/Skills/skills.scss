@@ -9,6 +9,7 @@
   .wrapper {
     @extend %wrapper-styles;
     flex-direction: column;
+    align-items: center;
 
     .title {
       @extend %section-title;
@@ -18,10 +19,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      width: 80%;
       gap: 4rem;
+
+      @include mixins.notebook {
+        gap: 2rem 1rem;
+      }
 
       .skill {
         @extend %display-flex-column;
+        align-items: center;
         justify-content: center;
         cursor: pointer;
 
@@ -31,6 +38,10 @@
           text-align: center;
           color: variables.$gray-text;
           padding-bottom: 5px;
+
+          @include mixins.notebook {
+            font-size: 1.3125rem;
+          }
         }
 
         &-card {
@@ -38,6 +49,14 @@
           border-radius: 6px;
           border: solid 4px transparent;
           transition: 0.9s;
+
+          @include mixins.notebook {
+            width: 80%;
+          }
+
+          img {
+            width: 100%;
+          }
 
           &:hover {
             transition: 0.3s;

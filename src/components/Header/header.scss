@@ -6,12 +6,21 @@ header {
   margin-top: 76px;
   padding: 72px 0;
 
+  @include mixins.notebook {
+    margin-top: 60px;
+  }
+
   .wrapper {
     @extend %wrapper-styles;
     justify-content: space-between;
+    gap: 30px;
 
     .my-picture {
-      width: 28.125rem;
+      width: 30.125rem;
+
+      @include mixins.notebook {
+        width: 28.5rem;
+      }
     }
 
     .apresentation {
@@ -19,17 +28,25 @@ header {
       justify-content: center;
       flex-direction: column;
       gap: 20px;
-      max-width: 528px;
+      min-width: 40%;
       color: variables.$white;
 
       &-message {
         font-size: 1.8rem;
         font-weight: 400;
+
+        @include mixins.notebook {
+          font-size: 1.4rem;
+        }
       }
 
       &-name {
         font-size: 2.5rem;
         font-weight: 900;
+
+        @include mixins.notebook {
+          font-size: 2.2rem;
+        }
       }
 
       &-career {
@@ -37,10 +54,15 @@ header {
         padding-top: 10px;
         font-size: 2rem;
         font-weight: 400;
+
+        @include mixins.notebook {
+          font-size: 1.8rem;
+        }
       }
 
       .social-links {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         align-items: center;
 

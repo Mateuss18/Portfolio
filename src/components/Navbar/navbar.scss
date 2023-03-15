@@ -13,7 +13,7 @@
   border-bottom: 1px solid variables.$gray;
 
   @include mixins.notebook {
-    height: 60px;
+    height: 65px;
   }
 
   .wrapper {

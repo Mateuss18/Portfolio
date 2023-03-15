@@ -16,6 +16,7 @@
 
     .container {
       display: flex;
+      justify-content: center;
       gap: 40px;
 
       .card {
@@ -30,12 +31,20 @@
 
           .card-title {
             font-size: 1.625rem;
+
+            @include mixins.notebook {
+              font-size: 1.55rem;
+            }
           }
 
           .card-time {
             font-size: 1.125rem;
             font-weight: 400;
             color: variables.$gray-text;
+
+            @include mixins.notebook {
+              font-size: 1rem;
+            }
           }
         }
 
@@ -51,6 +60,10 @@
           .description {
             font-size: 1.25rem;
             color: variables.$gray-text;
+
+            @include mixins.notebook {
+              font-size: 1rem;
+            }
           }
         }
       }
