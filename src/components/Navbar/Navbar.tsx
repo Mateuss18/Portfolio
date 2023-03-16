@@ -10,6 +10,10 @@ function Navbar () {
     setMode(!active)
   }
 
+  const ToggleLinks = () => {
+    window.innerWidth < 840 ? ToggleMode() : ''
+  }
+
   return (
     <nav className={active ? 'navbar activeMenu' : 'navbar'}>
       <div className='wrapper'>
@@ -17,12 +21,12 @@ function Navbar () {
           <img src={logo} alt="Logomarca Mateus Lopes" />
         </a>
         <ul className='menu'>
-          <li><a href="#header" onClick={ToggleMode}>Inicio</a></li>
-          <li><a href="#about" onClick={ToggleMode}>Sobre</a></li>
-          <li><a href="#experience" onClick={ToggleMode}>Experiências</a></li>
-          <li><a href="#projects" onClick={ToggleMode}>Projetos</a></li>
-          <li><a href="#skills" onClick={ToggleMode}>Habilidades</a></li>
-          <li><a href="#contact" onClick={ToggleMode}>Contato</a></li>
+          <li><a href="#header" onClick={ToggleLinks}>Inicio</a></li>
+          <li><a href="#about" onClick={ToggleLinks}>Sobre</a></li>
+          <li><a href="#experience" onClick={ToggleLinks}>Experiências</a></li>
+          <li><a href="#projects" onClick={ToggleLinks}>Projetos</a></li>
+          <li><a href="#skills" onClick={ToggleLinks}>Habilidades</a></li>
+          <li><a href="#contact" onClick={ToggleLinks}>Contato</a></li>
         </ul>
         <button className={active ? 'btn-open' : 'btn-open active'} onClick={ToggleMode}>
           <img src={menuOpen} alt="Abrir menu" />
