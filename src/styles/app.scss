@@ -1,3 +1,12 @@
 @use "./mixins.scss";
 
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+
+  @include mixins.notebook {
+    scroll-padding-top: 45px;
+  }
+}
+
 @include mixins.resetCSS;
