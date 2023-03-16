@@ -1,0 +1,28 @@
+.backToTopBtn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  bottom: 1rem;
+  right: 2.5rem;
+  transition: 500ms;
+  transform: translateY(100%);
+
+  img {
+    width: 100%;
+    border: solid 2px #880000;
+    border-radius: 90px;
+  }
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
