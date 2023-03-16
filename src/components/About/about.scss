@@ -10,11 +10,7 @@
     flex-direction: column;
 
     .title {
-      text-align: center;
-      color: variables.$white;
-      font-size: 2.5rem;
-      font-weight: 400;
-      padding-bottom: 48px;
+      @extend %section-title;
     }
 
     .container {
@@ -22,11 +18,22 @@
       justify-content: center;
       gap: 5rem;
 
+      @include mixins.tablet {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+      }
+
       .ilustration {
         width: 50%;
 
         @include mixins.notebook {
           width: 40%;
+        }
+
+        @include mixins.tablet {
+          width: 70%;
+          max-width: 450px;
         }
       }
 
@@ -42,6 +49,11 @@
 
         @include mixins.notebook {
           font-size: 1.15rem;
+        }
+
+        @include mixins.tablet {
+          font-size: 1rem;
+          width: fit-content;
         }
       }
     }

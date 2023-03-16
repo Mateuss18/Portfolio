@@ -10,6 +10,10 @@
     font-size: 0.9rem;
   }
 
+  @include mixins.tablet {
+    font-size: 0.75rem;
+  }
+
   .wrapper {
     @extend %wrapper-styles;
     align-items: center;
@@ -17,7 +21,15 @@
     flex-wrap: wrap;
     gap: 12px;
 
+    @include mixins.tablet {
+      justify-content: center;
+    }
+
     .left {
+      @include mixins.tablet {
+        text-align: center;
+      }
+
       span {
         color: variables.$red-200;
       }
@@ -27,11 +39,20 @@
       display: flex;
       gap: 10px;
 
+      @media (max-width: 385px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       img {
         width: 115px;
 
         @include mixins.notebook {
           font-size: 0.9rem;
+        }
+
+        @include mixins.tablet {
+          width: 104px;
         }
       }
     }

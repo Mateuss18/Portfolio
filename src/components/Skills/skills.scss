@@ -26,6 +26,11 @@
         gap: 2rem 1rem;
       }
 
+      @include mixins.notebook {
+        width: fit-content;
+        gap: 1.4rem 0.8rem;
+      }
+
       .skill {
         @extend %display-flex-column;
         align-items: center;
@@ -52,6 +57,10 @@
 
           @include mixins.notebook {
             width: 80%;
+          }
+
+          @include mixins.tablet {
+            width: 100px;
           }
 
           img {

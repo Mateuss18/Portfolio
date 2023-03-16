@@ -15,11 +15,22 @@ header {
     justify-content: space-between;
     gap: 30px;
 
+    @include mixins.tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 32px;
+    }
+
     .my-picture {
       width: 30.125rem;
 
       @include mixins.notebook {
         width: 40%;
+      }
+
+      @include mixins.tablet {
+        width: 75%;
+        max-width: 400px;
       }
     }
 
@@ -31,12 +42,20 @@ header {
       min-width: 40%;
       color: variables.$white;
 
+      @include mixins.tablet {
+        align-items: center;
+      }
+
       &-message {
         font-size: 1.8rem;
         font-weight: 400;
 
         @include mixins.notebook {
           font-size: 1.4rem;
+        }
+
+        @include mixins.tablet {
+          font-size: 1.25rem;
         }
       }
 
@@ -46,6 +65,11 @@ header {
 
         @include mixins.notebook {
           font-size: 2.2rem;
+        }
+
+        @include mixins.tablet {
+          font-size: 2rem;
+          text-align: center;
         }
       }
 
@@ -58,6 +82,10 @@ header {
         @include mixins.notebook {
           font-size: 1.8rem;
         }
+
+        @include mixins.tablet {
+          font-size: 1.5rem;
+        }
       }
 
       .social-links {
@@ -65,6 +93,10 @@ header {
         flex-wrap: wrap;
         gap: 20px;
         align-items: center;
+
+        @include mixins.tablet {
+          justify-content: center;
+        }
 
         .btn {
           display: flex;
@@ -75,6 +107,10 @@ header {
           font-weight: 900;
           padding: 10px 15px;
           border-radius: 8px;
+
+          @include mixins.tablet {
+            font-size: 0.875rem;
+          }
         }
 
         &-linkedin {

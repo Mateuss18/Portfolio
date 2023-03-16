@@ -2,10 +2,6 @@
 @use "./variables.scss";
 
 @mixin resetCSS {
-  html {
-    scroll-padding-top: 70px;
-  }
-
   html,
   body {
     width: 100%;
@@ -57,12 +53,22 @@
   }
 }
 
+@mixin tablet {
+  @media (max-width: 840px) {
+    @content;
+  }
+}
+
 %section-title {
   font-size: 2.5rem;
   font-weight: 400;
   text-align: center;
   color: variables.$white;
   padding-bottom: 48px;
+
+  @media (max-width: 1380px) {
+    font-size: 2.5rem;
+  }
 }
 
 %display-flex-column {
@@ -73,6 +79,6 @@
 %wrapper-styles {
   display: flex;
   width: min(75.25rem, 100%);
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
   margin-inline: auto;
 }

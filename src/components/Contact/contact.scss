@@ -21,6 +21,10 @@
       transition: 0.5s;
       cursor: copy;
 
+      @include mixins.tablet {
+        font-size: 1.1rem;
+      }
+
       &:hover {
         transition: 0.5s;
         transform: scale(1.1);
@@ -29,12 +33,22 @@
 
     .social-contact {
       display: flex;
+      justify-content: center;
       gap: 22px;
       margin-top: 28px;
     }
 
     .btn {
       -webkit-transition: -webkit-filter 500ms linear;
+      height: 61.59px;
+
+      @include mixins.tablet {
+        width: 35%;
+      }
+
+      img {
+        width: 100%;
+      }
 
       &:hover {
         -webkit-transition: -webkit-filter 500ms linear;
