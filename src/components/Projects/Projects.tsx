@@ -16,7 +16,7 @@ const Projects = () => {
     <ProjectCard name='Agency' imageLink='https://user-images.githubusercontent.com/71786964/223005361-5da139b7-3ab0-4520-a6c5-d46acf7c42d6.jpg' githubLink='https://github.com/Mateuss18/Agency' deployLink='https://agency-2.netlify.app' />,
     <ProjectCard name='OdontoCare' imageLink='https://user-images.githubusercontent.com/71786964/223006950-2e22c8b9-4bfa-4838-b2d6-aec513066cfd.jpg' githubLink='https://github.com/Mateuss18/NLW-Return_OdontoCare' deployLink='https://mateuss18.github.io/NLW-Return_OdontoCare/' />,
     <ProjectCard name='Desafio 21 dias de codigo' imageLink='https://user-images.githubusercontent.com/71786964/223006457-1d9e6bb7-896e-405b-b83f-7e911f833f3f.jpg' githubLink='https://github.com/Mateuss18/21-dias-de-codigo-Rocketseat' deployLink='https://mateuss18.github.io/21-dias-de-codigo-Rocketseat/21-Portfolio/index.html' />,
-    <ProjectCard name='Em desenvolvimento' imageLink={emDesenvolvimento} githubLink='#' deployLink='#' />,
+    <ProjectCard name='P.A. Informática' imageLink={emDesenvolvimento} githubLink='#' deployLink='#' />,
   ];
 
   return (

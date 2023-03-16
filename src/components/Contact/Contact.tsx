@@ -7,7 +7,7 @@ function Contact() {
     <section id="contact">
       <div className="wrapper">
         <h2 className='title'>Contato</h2>
-        <button className="email">mateus20.lopes02@gmail.com</button>
+        <div className="email">mateus20.lopes02@gmail.com</div>
         <div className="social-contact">
           <a href='https://wa.me/5519996489694' target={'_blank'} className="whatsapp btn">
             <img src={whatsappIcon} alt="Icone Whatsapp" />

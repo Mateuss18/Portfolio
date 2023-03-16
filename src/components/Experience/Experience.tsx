@@ -11,7 +11,7 @@ function Experience() {
               <h3 className="card-title">
                 Desenvolvedor Front-End Freelancer
               </h3>
-              <span className="card-time">Fevereiro 2022 - atualmente ({new Date().getMonth()} mêses)</span>
+              <span className="card-time">Fevereiro 2022 - atualmente ({new Date().getMonth()} meses)</span>
             </div>
             <div className="info">
               <div className="company">
@@ -27,7 +27,7 @@ function Experience() {
               <h3 className="card-title">
                 Estágiario em Análise de dados
               </h3>
-              <span className="card-time">Outubro 2022 - Dezembro 2022 (2 mêses)</span>
+              <span className="card-time">Outubro 2022 - Dezembro 2022 (2 meses)</span>
             </div>
             <div className="info">
               <div className="company">
