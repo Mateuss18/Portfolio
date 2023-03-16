@@ -13,11 +13,54 @@
   border-bottom: 1px solid variables.$gray;
 
   @include mixins.notebook {
-    height: 65px;
+    height: 72px;
+  }
+
+  @include mixins.tablet {
+    padding: 24px 0;
+    height: fit-content;
+
+    .menu {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &.activeMenu {
+    padding: 0;
+    height: 100dvh;
+    align-items: flex-start;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    .wrapper {
+      flex-direction: column;
+
+      .menu {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+
+        li a {
+          font-size: 1.375rem;
+        }
+      }
+
+      .logo {
+        position: absolute;
+        left: 24px;
+        top: 24px;
+      }
+    }
   }
 
   .wrapper {
     @extend %wrapper-styles;
+    align-items: center;
     justify-content: space-between;
 
     .logo {
@@ -25,6 +68,14 @@
 
       @include mixins.notebook {
         height: 30px;
+      }
+
+      @include mixins.tablet {
+        height: 26px;
+      }
+
+      img {
+        height: 100%;
       }
     }
 
@@ -41,6 +92,42 @@
         @include mixins.notebook {
           font-size: 1rem;
         }
+
+        a {
+          -webkit-tap-highlight-color: transparent;
+        }
+      }
+    }
+
+    .active {
+      display: none;
+
+      @include mixins.tablet {
+        display: block !important;
+      }
+    }
+
+    .btn-open {
+      display: none;
+      width: 24px;
+      height: 18px;
+    }
+
+    .btn-close {
+      display: none;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 24px;
+      top: 27px;
+    }
+
+    button {
+      transition: 300ms;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(85%);
       }
     }
   }
