@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import emDesenvolvimento from './assets/em-desenvolvimento.webp';
 import project1 from './assets/project-electrum.webp';
 import project2 from './assets/project-agency.webp';
-import project3 from './assets/em-odontocare.webp';
+import project3 from './assets/project-odontocare.webp';
 import project4 from './assets/project-21dias.webp';
 import './projects.scss';
 
