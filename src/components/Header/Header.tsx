@@ -2,7 +2,7 @@ import imagemMateus from './assets/fotoMateusLopes.svg'
 import iconLinkedin from './assets/iconLinkedin.svg'
 import iconGithub from './assets/iconGithub.svg'
 import iconDownload from './assets/iconDownload.svg'
-import curriculo from './assets/CV-Mateus_Lopes.pdf'
+import curriculo from './assets/Mateus Lopes - Dev Front End.pdf'
 import './header.scss'
 
 const Header = () => {
