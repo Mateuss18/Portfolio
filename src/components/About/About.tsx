@@ -16,7 +16,7 @@ function About() {
               Também sou apaixonado por fazer atividade física, algo que me ajuda muito a manter o foco e a disciplina nas tarefas do dia a dia.
             </p>
             <p>
-              Atualmente trabalho como desenvolvedor Front End freelancer para adqurir experiência, entretanto tenho como objetivo trabalhar em uma empresa como desenvolvedor fixo em um ambiente de trabalho dinâmico e desafiador.
+              Trabalhei um tempo como desenvolvedor Front End freelancer para adqurir experiência e atualmente trabalho como Desenvolvedor Front End na Agência Delucca.
             </p>
           </div>
         </div>
