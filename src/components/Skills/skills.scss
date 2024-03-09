@@ -19,8 +19,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 80%;
-      gap: 4rem;
+      width: 90%;
+      row-gap: 2.5rem;
 
       @include mixins.notebook {
         gap: 2rem 1rem;
@@ -36,6 +36,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        width: fit-content;
 
         &-name {
           font-size: 1.5rem;
@@ -51,6 +52,8 @@
 
         &-card {
           display: flex;
+          justify-content: center;
+          width: 80%;
           border-radius: 6px;
           border: solid 4px transparent;
           transition: 0.9s;

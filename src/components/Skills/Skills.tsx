@@ -5,6 +5,8 @@ import iconGit from './assets/iconGit.svg';
 import iconJavascript from './assets/iconJavascript.svg'
 import iconFigma from './assets/iconFigma.svg';
 import iconReact from './assets/iconReact.svg';
+import iconVue from './assets/iconVue.svg';
+import iconNuxt from './assets/iconNuxt.svg';
 import iconTypescript from './assets/iconTypescript.svg';
 import iconMysql from './assets/iconMysql.svg';
 import SkillCard from "./SkillCard"
@@ -21,9 +23,11 @@ function Skills() {
           <SkillCard name='JavaScript' image={iconJavascript} />
           <SkillCard name='SASS' image={iconSASS} />
           <SkillCard name='Git/GitHub' image={iconGit} />
-          <SkillCard name='MySQL' image={iconMysql} />
+          <SkillCard name='Vue' image={iconVue} />
+          <SkillCard name='Nuxt' image={iconNuxt} />
           <SkillCard name='React' image={iconReact} />
           <SkillCard name='TypeScript' image={iconTypescript} />
+          <SkillCard name='MySQL' image={iconMysql} />
           <SkillCard name='Figma' image={iconFigma} />
         </div>
       </div>
