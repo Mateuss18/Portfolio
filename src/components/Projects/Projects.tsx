@@ -16,11 +16,11 @@ const Projects = () => {
   };
 
   const items = [
-    <ProjectCard name='Electrum' imageLink={project1} githubLink='https://github.com/Mateuss18/Electrum' deployLink='https://mateuss18.github.io/Electrum/' />,
-    <ProjectCard name='Agency' imageLink={project2} githubLink='https://github.com/Mateuss18/Agency' deployLink='https://agency-2.netlify.app' />,
-    <ProjectCard name='OdontoCare' imageLink={project3} githubLink='https://github.com/Mateuss18/NLW-Return_OdontoCare' deployLink='https://mateuss18.github.io/NLW-Return_OdontoCare/' />,
-    <ProjectCard name='Desafio 21 dias de codigo' imageLink={project4} githubLink='https://github.com/Mateuss18/21-dias-de-codigo-Rocketseat' deployLink='https://mateuss18.github.io/21-dias-de-codigo-Rocketseat/21-Portfolio/index.html' />,
     <ProjectCard name='P.A. Informática' imageLink='https://raw.githubusercontent.com/Mateuss18/PA-Informatica/main/assets/readme-image.png' githubLink='https://github.com/Mateuss18/PA-Informatica' deployLink='https://pa-informatica.vercel.app' />,
+    <ProjectCard name='Electrum' imageLink={project1} githubLink='https://github.com/Mateuss18/Electrum' deployLink='https://electrum-chi.vercel.app/' />,
+    <ProjectCard name='Agency' imageLink={project2} githubLink='https://github.com/Mateuss18/Agency' deployLink='https://agency-2.netlify.app' />,
+    <ProjectCard name='OdontoCare' imageLink={project3} githubLink='https://github.com/Mateuss18/NLW-Return_OdontoCare' deployLink='https://nlw-return-odonto-care.vercel.app/' />,
+    <ProjectCard name='Desafio 21 dias de codigo' imageLink={project4} githubLink='https://github.com/Mateuss18/21-dias-de-codigo-Rocketseat' deployLink='https://mateuss18.github.io/21-dias-de-codigo-Rocketseat/21-Portfolio/index.html' />,
   ];
 
   return (
