@@ -1,28 +1,37 @@
-import ilustracao from './assets/ilustracao.svg'
-import './about.scss'
+import ilustracao from "./assets/ilustracao.svg";
+import "./about.scss";
 
 function About() {
   return (
-    <section id='about'>
+    <section id="about">
       <div className="wrapper">
-        <h2 className='title'>Sobre</h2>
+        <h2 className="title">Sobre</h2>
         <div className="container">
-          <img className='ilustration' src={ilustracao} alt="Ilustração de um desenvolvedor" />
-          <div className='description'>
+          <img
+            className="ilustration"
+            src={ilustracao}
+            alt="Ilustração de um desenvolvedor"
+            width={530}
+            height={570}
+          />
+          <div className="description">
             <p>
-              Com 2 anos de experiência em desenvolvimento de projetos web e formado em Análise e Desenvolvimento de Sistemas, possuo amplo conhecimento nas tecnologias Front End para criar soluções de qualidade, dinâmicas e responsivas.
+              Sou Desenvolvedor Front-End com mais de 3 anos de experiência e
+              formado em Análise e Desenvolvimento de Sistemas. Me especializei
+              na criação de interfaces modernas e funcionais, com foco em
+              performance, SEO e acessibilidade.
             </p>
             <p>
-              Também sou apaixonado por fazer atividade física, algo que me ajuda muito a manter o foco e a disciplina nas tarefas do dia a dia.
+              Atualmente atuo na Agência Delucca, desenvolvendo e-commerces com Vue.js e Nuxt.js. Já participei de mais de 7 projetos completos, criando componentes personalizados e otimizando a experiência do usuário. Também desenvolvi uma ferramenta interna em Electron que reduziu em até 35% o tempo de produção de landing pages.
             </p>
             <p>
-              Trabalhei um tempo como desenvolvedor Front End freelancer para adqurir experiência e atualmente trabalho como Desenvolvedor Front End na Agência Delucca.
+              Gosto de colaborar com a equipe por meio de code reviews, documentação técnica e suporte a outros desenvolvedores. Fora do trabalho, sou entusiasta de atividades físicas, o que me ajuda a manter disciplina e foco no dia a dia.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

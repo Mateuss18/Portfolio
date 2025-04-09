@@ -10,10 +10,10 @@ function Contact() {
         <div className="email">mateus20.lopes02@gmail.com</div>
         <div className="social-contact">
           <a href='https://wa.me/5519996489694' target={'_blank'} className="whatsapp btn">
-            <img src={whatsappIcon} alt="Icone Whatsapp" />
+            <img src={whatsappIcon} alt="Icone Whatsapp" width={62} height={62} />
           </a>
           <a href='https://www.linkedin.com/in/mateus--lopes/' target={'_blank'} className="linkedin btn">
-            <img src={linkedinIcon} alt="Icone LinkedIn" />
+            <img src={linkedinIcon} alt="Icone LinkedIn" width={62} height={62} />
           </a>
         </div>
       </div>

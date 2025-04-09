@@ -29,7 +29,7 @@ const BackToTop = () => {
     <>
       { backToTopButton && (
         <a href="#header" className='backToTopBtn' id='backToTopBtn' onClick={scrollUp}>
-          <img src={backToTopImg} alt="Botão de voltar para cima" />
+          <img src={backToTopImg} alt="Botão de voltar para cima" width={52} height={52} />
         </a>
       )}
     </>

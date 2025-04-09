@@ -8,7 +8,7 @@ function SkillCard(props: skillCardProps) {
 
   return (
     <div className='skill'>
-      <h5 className="skill-name">{name}</h5>
+      <p className="skill-name">{name}</p>
       <div className="skill-card">
         <img src={image} alt={`Icone do ${name}`} />
       </div>

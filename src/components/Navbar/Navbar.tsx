@@ -18,7 +18,7 @@ function Navbar () {
     <nav className={active ? 'navbar activeMenu' : 'navbar'}>
       <div className='wrapper'>
         <a href="#" className='logo'>
-          <img src={logo} alt="Logomarca Mateus Lopes" />
+          <img src={logo} alt="Logomarca Mateus Lopes" width={228} height={40} />
         </a>
         <ul className='menu'>
           <li><a href="#header" onClick={ToggleLinks}>Inicio</a></li>
