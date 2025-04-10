@@ -1,4 +1,4 @@
-import imagemMateus from './assets/fotoMateusLopes.png'
+import imagemMateus from './assets/fotoMateusLopes.webp'
 import iconLinkedin from './assets/iconLinkedin.svg'
 import iconGithub from './assets/iconGithub.svg'
 import iconDownload from './assets/iconDownload.svg'
@@ -18,7 +18,7 @@ const Header = () => {
           </h1>
           <div className="social-links">
             <a className='social-links-linkedin btn' target={'_blank'} href='https://www.linkedin.com/in/mateus--lopes/'>
-              <img src={iconLinkedin} alt="Icone do LinkedIn" />
+              <img src={iconLinkedin} alt="Icone do LinkedIn" width={30} height={28} />
               LinkedIn
             </a>
             <a className='social-links-github btn' target={'_blank'} href='https://github.com/Mateuss18'>

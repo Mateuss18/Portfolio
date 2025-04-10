@@ -23,6 +23,7 @@ header {
 
     .my-picture {
       width: 30.125rem;
+      height: 100%;
 
       @include mixins.notebook {
         width: 40%;

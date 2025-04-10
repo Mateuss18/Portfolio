@@ -26,6 +26,7 @@
 
       .ilustration {
         width: 50%;
+        height: 100%;
 
         @include mixins.notebook {
           width: 40%;
