@@ -23,9 +23,9 @@ function Navbar () {
         <ul className='menu'>
           <li><a href="#header" onClick={ToggleLinks}>Inicio</a></li>
           <li><a href="#about" onClick={ToggleLinks}>Sobre</a></li>
-          <li><a href="#experience" onClick={ToggleLinks}>Experiências</a></li>
-          <li><a href="#projects" onClick={ToggleLinks}>Projetos</a></li>
           <li><a href="#skills" onClick={ToggleLinks}>Habilidades</a></li>
+          <li><a href="#projects" onClick={ToggleLinks}>Projetos</a></li>
+          <li><a href="#experience" onClick={ToggleLinks}>Experiências</a></li>
           <li><a href="#contact" onClick={ToggleLinks}>Contato</a></li>
         </ul>
         <button className={active ? 'btn-open' : 'btn-open active'} onClick={ToggleMode}>
